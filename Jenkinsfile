@@ -19,9 +19,10 @@ pipeline {
             git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
          }
       }
+      
       stage('Build') {
          steps {
-            sh '''mvn clean package'''
+            sh '''echo No build required for Queue'''
          }
       }
 
